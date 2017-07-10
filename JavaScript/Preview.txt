@@ -1,0 +1,3 @@
+temp = "Are you sure about this Announcement?" + "\n" + "\n" + "Title: " + Title + "\n" + "Teacher: " + Teachername + "\n" + "Gender: " + Gender + "\n" + "Grades: " + Grade + "\n" + "Category: " + Category + "\n" + "Clubs/Teams: " + ClubTeam + "\n" + "Importance: " + Importance + "\n" + "Time Posted: " + Time + "\n" + "Content: " + Content;
+    
+temp = "Are you sure about this Announcement?";
