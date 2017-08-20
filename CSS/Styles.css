@@ -1,0 +1,110 @@
+/********************************
+**     NPSS Announcements      ** 
+**                             **
+** Urmilumar Modi              **
+** ICS3U-A                     **
+** Ver 2.0 - October 21, 2016  **
+** Last Edit: Oct. 21, 2016    **
+********************************/
+
+/* Header */
+h1 {
+    text-align: center;
+}
+
+/* Top Navigation */
+HeadBar{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    vertical-align: middle;
+}
+
+/* Top Navigation Buttons */
+li {
+    float: right;
+    background-color: black;
+    vertical-align:middle;
+}
+
+/* Top Navigation Button Specific */
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    vertical-align:middle;
+    padding: 14px 40px;
+    text-decoration: none;
+    height: auto;
+    line-height: auto;
+}
+
+/* Top Navgication Button Hover */
+li a:hover {
+    background-color: deepskyblue;
+}
+
+body {
+    margin: auto;
+    width: auto;
+    height: auto;
+}
+
+/* Div Containers */
+div {
+    text-align: center;
+}
+
+/* Display Announcement Table */
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+}
+
+/* Rows */ 
+th, td {
+    text-align: center;
+    white-space: pre;
+}
+
+tr {
+    background: white;
+    color: black;
+}
+
+/* Announcement Cells */
+td:nth-child(odd) {
+    background: blue;
+    color: white;
+}
+
+td:nth-child(even) {
+    background: orange;
+    color: white;
+}
+
+/* Split Page Buttons */
+.wrap {
+    width: 100%;
+}
+
+.floatleft {
+    float:left; 
+    width: 50%;
+    background-color: deepskyblue;
+    height: 82.6%;
+}
+
+.floatright {
+    float:right;
+    width: 50%;
+    background-color: #00ff00;
+    height: 82.6%;
+}

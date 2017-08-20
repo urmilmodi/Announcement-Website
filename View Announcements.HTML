@@ -1,0 +1,61 @@
+<!--*****************************
+**     NPSS Announcements      ** 
+**                             **
+** Urmilumar Modi              **
+** ICS3U-A                     **
+** Ver 1.5 - August 19, 2017   **
+** Last Edit: August 19, 2017  **
+******************************-->
+
+<html>
+    <head>
+        <title>NPSS Announcements | View Announcements</title>
+        
+        <!-- Import JavaScript -->
+        <script src="JavaScript\Script.js"></script>
+        
+        <!-- Import CSS Stylesheet -->
+        <link rel="stylesheet" type="text/css" href="CSS\Styles.css"/>
+
+    </head>
+    <body onload="showData()">				
+        
+        <!-- Top Navigcation Bar -->
+        <HeadBar>
+          <li style="float:left"><a href="index.HTML"><font size="6">NPSS Announcements</font></a></li>
+          <li><a href="Settings.HTML">Settings</a>
+          <li><a href="View%20Announcements.HTML">View Announcements</a></li>
+          <li><a href="Create%20Announcements.HTML">Create Announcements</a></li>
+          <li><a href="Student%20Login.HTML">Student Site</a></li>
+        </HeadBar><br><br><br>
+        
+        
+        <h1>View Announcements</h1>
+        <div id="s">
+            <input id="Search" placeholder="Search" type = "text"><input type="button" value="Submit" id="button" onclick="showData()"><br><br>
+        </div>
+    
+        <!-- Announcement Display Table -->
+         <table id = "ATable">
+            <!-- Row 1 -->
+            <tr>
+                <th>#</th>
+                <th>Title</th>
+                <th>Teacher</th>
+                <th>Gender</th>
+                <th>Grades</th>
+                <th>Category</th>
+                <th>Clubs/Teams</th>
+                <th>Time Posted</th>
+                <th>Message</th>
+            </tr>
+        </table><br><br>
+        
+        <!-- Announcement Edit -->
+        <div id="edit">
+            <a><strong>Announcement Edit</strong></a><br>
+            <a><small>Enter Announcement #</small></a><br><br>
+            <input type="number" name="quantity" id="editValue" min=1><input type="button" value="Submit Edit" id="button" onclick="editData()">
+        </div>
+    </body>
+</html>
