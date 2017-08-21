@@ -84,7 +84,6 @@ function login() {
         new InitialLocalStorageKeySetUp("IBT");
         new InitialLocalStorageKeySetUp("editValue");
         new InitialLocalStorageKeySetUp("edit");
-        new InitialLocalStorageKeySetUp("Option");
         
         if (window.location.href.includes("Login.HTML") && !window.location.href.includes("Student%20Login.HTML")) {
             window.location.assign("Create%20Announcements.HTML"); // Redirecting to Create Announcements
@@ -263,7 +262,14 @@ function showData() {
 
     // Force LogIn IF Login Fail
     if (localStorage.getItem("username") === "" || localStorage.getItem("username") === null) {
-        window.location.assign("Login.HTML");
+        
+        if (window.location.href.includes("Student%20View%20Announcements.HTML")) {
+            
+            window.location.assign("Student%20Login.HTML");
+        } else {
+            
+            window.location.assign("Login.HTML");
+        }
     
     // IF Login Pass Execute
     } else {
@@ -393,7 +399,6 @@ function editData() {
                 
                 if (window.confirm("Edit & Repost") === true) {
                     localStorage.setItem("Option", true);
-                    window.alert("Edit & Repost Selected");
                     edit = true;
                     editValue = Number(document.getElementById("editValue").value);
                     
@@ -448,7 +453,6 @@ function editData() {
                     
                 } else {
                     localStorage.setItem("Option", false);
-                    window.alert("Edit Only Selected");
                     edit = true;
                     editValue = Number(document.getElementById("editValue").value);
                     localStorage.setItem("editValue", editValue);
