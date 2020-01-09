@@ -1,6 +1,6 @@
 # Announcement Website
 
-Announcement Website created for Computer Science 11 (ICS 3U0). We were told to make an website for an announcement system that could be used in school.
+An announcement website created for an announcement system that could be used in my high school, as a replacement of the outdated speaker system.
 
 ### What can it do?
 
